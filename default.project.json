@@ -1,0 +1,48 @@
+{
+  "name": "StarlineOmega",
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedStorage": {
+      "$className": "ReplicatedStorage",
+      "Starline": {
+        "$path": "roblox/Starline"
+      },
+      "StarlineRemotes": {
+        "$className": "Folder"
+      },
+      "StarlineState": {
+        "$className": "Folder"
+      }
+    },
+    "ServerScriptService": {
+      "$className": "ServerScriptService",
+      "StarlineServer": {
+        "$path": "roblox/ServerScriptService/StarlineServer.server.lua"
+      }
+    },
+    "StarterPlayer": {
+      "$className": "StarterPlayer",
+      "StarterPlayerScripts": {
+        "$className": "StarterPlayerScripts",
+        "StarlineClient": {
+          "$path": "roblox/StarterPlayerScripts/StarlineClient.client.lua"
+        },
+        "StarlineHud": {
+          "$path": "roblox/StarterPlayerScripts/StarlineHud.client.lua"
+        },
+        "GarageShop": {
+          "$path": "roblox/StarterPlayerScripts/GarageShop.client.lua"
+        }
+      }
+    },
+    "Workspace": {
+      "$className": "Workspace",
+      "StarlineWaypoints": {
+        "$className": "Folder"
+      },
+      "StarlineWaypointsCircuit": {
+        "$className": "Folder"
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+name: STARLINE CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install
+        run: pip install -e ".[test]"
+      - name: Config sync
+        run: python scripts/sync_config_check.py
+      - name: Pytest
+        env:
+          PYTEST_DISABLE_PLUGIN_AUTOLOAD: "1"
+        run: pytest -q
+      - name: Loop seal
+        run: python scripts/loop_seal.py
+      - name: Coherence loop
+        run: python scripts/coherence_loop.py
+      - name: Field report
+        run: python scripts/field_report.py
