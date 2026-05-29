@@ -16,6 +16,9 @@
     },
     "ServerScriptService": {
       "$className": "ServerScriptService",
+      "StarlineBootstrap": {
+        "$path": "roblox/ServerScriptService/StarlineBootstrap.server.lua"
+      },
       "StarlineServer": {
         "$path": "roblox/ServerScriptService/StarlineServer.server.lua"
       }

@@ -37,9 +37,9 @@ Not a racing game. An **instrument** on an arc-length manifold.
 ## Quick start
 
 ```bash
-git clone <your-repo-url>
-cd starline
-./scripts/local_run.sh
+git clone https://github.com/invasivejet/starline-omega.git
+cd starline-omega
+./scripts/test_drive.sh    # validate everything, then Studio instructions
 python scripts/loop_seal.py          # seal manifest → output/schrodinger_manifest.json
 python scripts/coherence_loop.py     # closed measurement loop
 rojo serve                           # Studio → Play

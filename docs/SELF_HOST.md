@@ -8,13 +8,15 @@ Build from what exists: Python reference + Rojo → your Roblox experience. No e
 
 ## Tier 0 — Local loop (today)
 
-**One command:**
+**One command (test drive):**
 
 ```bash
 cd starline
-./scripts/local_run.sh          # venv + tests + headless sim
-./scripts/local_run.sh --rojo   # + rojo serve
+./scripts/test_drive.sh         # full validation + Studio steps
+./scripts/local_run.sh --rojo   # or: rojo serve after validation
 ```
+
+See **[TEST_DRIVE.md](TEST_DRIVE.md)** for the final checklist.
 
 **Full guide:** [LOCAL_RUN.md](LOCAL_RUN.md)
 
